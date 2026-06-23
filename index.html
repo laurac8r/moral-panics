@@ -1,0 +1,862 @@
+<!doctype html>
+<!-- Generated from: the thesis of Jessica Kellgren-Fozard's "Why Anti-Trans Arguments Feel So Familiar" (https://youtu.be/mL8knXMmiEg?t=61) — "Every generation thinks their moral panic is brand new. It never is." + "Add in the moral panics behind LGBTQIA2+ and minority discrimination, oppression, and segregation throughout history." -->
+<!-- Input: concept prompt; layout: three vertical timelines (media panics; panics aimed at LGBTQIA2+ people; panics aimed at racial/ethnic/religious minorities) + bridge cards + closing template. -->
+<!-- All historical entries researched and adversarially fact-checked (dates, names, laws, figures) before inclusion. -->
+<!-- Anchors — MEDIA: writing, novels, waltz, comics, rock'n'roll, D&D, video games, smartphones. LGBTQIA2+: Two-Spirit colonial suppression, Labouchère/Wilde, Paragraph 175/pink triangle, Lavender Scare, Save Our Children/Section 28, AIDS "gay plague", bathroom-bill/"groomer". MINORITY: blood libel, witch trials, anti-Catholic nativism, Chinese Exclusion, "Black beast rapist"/Jim Crow, Protocols→Holocaust, Reefer Madness, Japanese incarceration, superpredator/crack-baby, post-9/11 anti-Muslim. Curated out (documented, omitted for length): Briggs Initiative & HIV quarantine/tattoo as standalone entries (folded in), pinball, dime novels, TV, jazz, PMRC, Harry Potter, Salem as standalone, apartheid, Armenian/Rwandan genocides, white-slavery panic, satanic ritual-abuse panic. -->
+<html lang="en" dir="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="The recurring structure of moral panics — the same machine aimed at new media, and far more often at whole groups of people. Fact-checked historical timelines."
+    />
+    <title>It's Never New — The Recurring Shape of Moral Panics</title>
+    <style>
+      :root {
+        --bg: #0f1115;
+        --fg: #e8ecf1;
+        --muted: #9aa3af;
+        --accent: #7cc4ff;
+        --card: #1e2330;
+        --ring: #ffd866;
+        --border: #2a3040;
+        --radius: 14px;
+        --pad: clamp(16px, 3vw, 28px);
+      }
+      @media (prefers-color-scheme: light) {
+        /* Dark-mode --accent/--ring fail 4.5:1 / 3:1 on white — re-pick per scheme. */
+        :root {
+          --bg: #fafaf7;
+          --fg: #141821;
+          --muted: #525863;
+          --card: #ffffff;
+          --accent: #0057b3;
+          --ring: #b45309;
+          --border: #e2e5ec;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          16px/1.55 ui-sans-serif,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+      }
+      header.site,
+      footer.site {
+        max-width: 72ch;
+        margin: 0 auto;
+        padding: var(--pad);
+      }
+      main {
+        max-width: 72ch;
+        margin: 0 auto;
+        padding: var(--pad);
+      }
+      h1 {
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        line-height: 1.15;
+        margin: 0 0 0.25em;
+      }
+      h2 {
+        font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+        margin: 2em 0 0.3em;
+        padding-top: 0.6em;
+        border-top: 1px solid var(--border);
+      }
+      h3 {
+        font-size: 1.05rem;
+        margin: 0 0 0.15em;
+      }
+      p {
+        margin: 0.5em 0;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .lede {
+        font-size: clamp(1rem, 1.6vw, 1.15rem);
+      }
+      /* Thesis pull-quote — accent rail + card fill, text stays --fg. */
+      .thesis {
+        margin: 1.4rem 0 0;
+        padding: 1rem 1.2rem;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-left: 5px solid var(--accent);
+        border-radius: var(--radius);
+        font-size: clamp(1.05rem, 2vw, 1.3rem);
+        line-height: 1.4;
+      }
+      .thesis cite {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        font-style: normal;
+        color: var(--muted);
+      }
+      /* Section intro + content note — muted lead-in under each h2. */
+      .note {
+        margin: 0.6rem 0 0.4rem;
+        padding: 0.8rem 1rem;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      /* Content warning — amber --ring rail signals caution; meaning carried by
+         the bold "Content warning" text, never by color alone. */
+      .tw {
+        margin: 1.2rem 0 0;
+        padding: 0.9rem 1.1rem;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-left: 5px solid var(--ring);
+        border-radius: var(--radius);
+        font-size: 0.95rem;
+      }
+      .tw strong {
+        color: var(--fg);
+      }
+      .sources ul {
+        margin: 0.4rem 0 1.2rem;
+        padding-left: 1.2rem;
+      }
+      .sources li {
+        margin: 0.35rem 0;
+      }
+      .sources h3 {
+        margin: 1.2em 0 0.2em;
+      }
+      /* Timeline: ordered chronology, vertical rail with a dot per era. */
+      ol.timeline {
+        list-style: none;
+        margin: 1rem 0 0;
+        padding: 0 0 0 1.6rem;
+        border-left: 2px solid var(--border);
+      }
+      ol.timeline > li {
+        position: relative;
+        padding: 0 0 1.6rem 0.6rem;
+      }
+      ol.timeline > li:last-child {
+        padding-bottom: 0.2rem;
+      }
+      ol.timeline > li::before {
+        content: "";
+        position: absolute;
+        left: calc(-1.6rem - 7px);
+        top: 0.35rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent);
+        border: 2px solid var(--bg);
+      }
+      .era {
+        display: block;
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 0.85rem;
+        letter-spacing: 0.02em;
+      }
+      .fear {
+        margin: 0.35em 0 0;
+      }
+      .fear strong {
+        color: var(--fg);
+      }
+      .doom {
+        margin: 0.4em 0 0;
+        color: var(--muted);
+        font-style: italic;
+        font-size: 0.95rem;
+      }
+      /* "What it built" line on the people-panics — stakes, scannable tag. */
+      .stakes {
+        margin: 0.45em 0 0;
+        font-size: 0.95rem;
+      }
+      .tag {
+        display: inline-block;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--accent);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 0 0.45em;
+        margin-right: 0.45em;
+        vertical-align: 1px;
+      }
+      /* min() lets columns shrink below 220px on narrow viewports (avoids 320px overflow) */
+      .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+        margin: 1rem 0;
+      }
+      .card {
+        background: var(--card);
+        padding: 1rem 1.1rem;
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        min-width: 0;
+      }
+      /* Numbered "beats" only on the closing template grid, not every grid. */
+      .beats {
+        counter-reset: beat;
+      }
+      .beats .card h3 {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+      }
+      .beats .card h3::before {
+        counter-increment: beat;
+        content: counter(beat);
+        flex: none;
+        color: var(--accent);
+        font-variant-numeric: tabular-nums;
+        font-size: 0.85rem;
+        border: 1px solid var(--border);
+        border-radius: 50%;
+        width: 1.6em;
+        height: 1.6em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        color: var(--accent);
+      }
+      :is(
+        a,
+        button,
+        input,
+        select,
+        textarea,
+        summary,
+        [tabindex],
+        [contenteditable]
+      ):focus-visible {
+        outline: 3px solid var(--ring);
+        outline-offset: 2px;
+        border-radius: 4px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+      @media print {
+        :root {
+          --bg: #fff;
+          --fg: #000;
+          --card: #fff;
+          --muted: #444;
+          --border: #999;
+          --accent: #003a80;
+          --ring: #003a80;
+        }
+        .grid {
+          grid-template-columns: 1fr !important;
+        }
+        main,
+        header.site,
+        footer.site {
+          max-width: 100% !important;
+          padding: 1em !important;
+        }
+        ol.timeline > li {
+          break-inside: avoid;
+        }
+        .card {
+          break-inside: avoid;
+        }
+        h2 {
+          break-after: avoid;
+        }
+        a::after {
+          content: " (" attr(href) ")";
+          font-size: 0.85em;
+          color: #444;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>/<footer> are siblings of <main> so they keep banner/contentinfo roles. -->
+    <header class="site">
+      <h1>It's Never New</h1>
+      <p class="lede muted">
+        The recurring shape of moral panics. The same machine that mocked each
+        generation's books, music, and games has, far more often, been pointed
+        at <em>people</em> — and that version doesn't just fade. It writes laws,
+        draws borders, and fills graves.
+      </p>
+      <aside class="tw" aria-label="Content warning">
+        <p>
+          <strong>Content warning.</strong> This page documents real historical
+          persecution and violence, described plainly — including genocide and
+          the Holocaust, slavery's aftermath, lynching and racial terror, the
+          incarceration and expulsion of whole communities, the persecution and
+          criminalization of LGBTQIA2+ people, the abuse of Indigenous children,
+          antisemitic blood libel, sexual violence, suicide, and the AIDS
+          epidemic. Several of these panics are still ongoing. Please take care
+          of yourself while reading.
+        </p>
+      </aside>
+      <blockquote class="thesis">
+        “Every generation thinks their moral panic is brand new. It never is.”
+        <cite>
+          — Jessica Kellgren-Fozard,
+          <a href="https://youtu.be/mL8knXMmiEg?t=61"
+            >Why Anti-Trans Arguments Feel So Familiar</a
+          >
+        </cite>
+      </blockquote>
+    </header>
+    <main>
+      <section aria-labelledby="machine-h">
+        <h2 id="machine-h">One machine, two kinds of target</h2>
+        <p class="muted">
+          Strip away the specifics and almost every panic runs the same play: a
+          manufactured threat — usually to children, purity, or “our way of
+          life” — is pinned on something different, alarm is raised by
+          authorities, and the public is told the danger is unprecedented. The
+          target comes in two shapes.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>A new thing</h3>
+            <p>
+              Often it's a medium the young love and adults don't get — a book,
+              a beat, a screen. These scares mostly burn out and fade into
+              embarrassment. <strong>The timeline below.</strong>
+            </p>
+          </div>
+          <div class="card">
+            <h3>A kind of person</h3>
+            <p>
+              Far more often, the same machine is aimed at a group of people.
+              Those panics don't simply pass — they build prisons, closets, and
+              camps. <strong>The two timelines after it.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="media-h">
+        <h2 id="media-h">When the panic is about a thing</h2>
+        <p class="muted">
+          Pick almost any era and you find adults convinced a new thing is
+          destroying the young. The costume changes; the plot doesn't.
+        </p>
+        <ol class="timeline">
+          <li>
+            <h3><span class="era">c. 370 BCE · Writing</span>The written word</h3>
+            <p class="fear">
+              In Plato's <em>Phaedrus</em>, <strong>Socrates warns</strong> that
+              writing things down will hollow out memory and breed only the
+              <em>appearance</em> of wisdom.
+            </p>
+            <p class="doom">
+              “This invention will produce forgetfulness in the souls of those
+              who learn it.”
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1700s · The novel</span>“Reading madness”</h3>
+            <p class="fear">
+              Physicians and moralists warned that <strong>novels</strong> would
+              inflame young women's passions, ruin them for real life, and breed
+              an addictive escape from reality.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1800s · The waltz</span>Dancing too close</h3>
+            <p class="fear">
+              The <strong>waltz</strong> — couples touching, turning face to
+              face — was denounced as obscene and a direct threat to female
+              virtue and public morals.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1954 · Comic books</span>Seduction of the Innocent</h3>
+            <p class="fear">
+              Psychiatrist Fredric Wertham's book blamed <strong>comic
+              books</strong> for juvenile delinquency, triggering U.S. Senate
+              hearings and an industry censorship code.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1950s · Rock 'n' roll</span>The devil's music</h3>
+            <p class="fear">
+              <strong>Elvis</strong> was filmed only from the waist up on
+              national TV; preachers and parents called the music a corrupting
+              influence luring the young toward ruin.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1980s · Dungeons &amp; Dragons</span>The Satanic Panic</h3>
+            <p class="fear">
+              A <strong>tabletop game</strong> was cast as a gateway to the
+              occult, suicide, and murder — part of a wider wave of fear about
+              hidden satanic influence on children.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1993–2005 · Video games</span>Trains killers</h3>
+            <p class="fear">
+              <strong>Mortal Kombat</strong> and <strong>Grand Theft Auto</strong>
+              drew Senate hearings and a new rating board; games were blamed for
+              real-world youth violence.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">2010s–now · Smartphones</span>The anxious generation</h3>
+            <p class="fear">
+              <strong>Phones and social media</strong> are blamed for an
+              attention-wrecked, anxious generation — the same fear about the
+              young and a new medium, lit by a different screen.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="lgbt-h">
+        <h2 id="lgbt-h">When the panic is about a person — LGBTQIA2+ lives</h2>
+        <p class="note">
+          The histories below are documented persecutions, not media scares.
+          They sit on this page not because they equal a comic-book panic in
+          gravity — they vastly exceed it — but because they were built with the
+          <em>same tool</em>: a manufactured threat to children or purity, aimed
+          at people for being different. Recognizing the pattern is how it gets
+          resisted.
+        </p>
+        <ol class="timeline">
+          <li>
+            <h3><span class="era">1513–1990s · Colonial Americas</span>The “sodomite savage”</h3>
+            <p class="fear">
+              Conquistadors and missionaries cast Indigenous third-gender and
+              <strong>Two-Spirit roles</strong> as “sodomy” and savagery to
+              justify conquest — Balboa's men killed roughly 40 Cueva people by
+              war-dog in 1513. Later, U.S. and Canadian boarding and residential
+              schools (1879–1996, “Kill the Indian, save the man”) enforced a
+              rigid gender binary on Native children.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Executions, forced conversion, and the
+              near-erasure of honored gender roles — only now being reclaimed
+              (“Two-Spirit” was coined in 1990).
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1885–1967 · United Kingdom</span>The Labouchère Amendment &amp; Oscar Wilde</h3>
+            <p class="fear">
+              An 1885 law criminalized <strong>“gross indecency”</strong> between
+              men, sold as a defense of public morality. Its vagueness made it a
+              “blackmailer's charter.”
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Oscar Wilde was sentenced to two
+              years' hard labour in 1895; the same offence convicted Alan Turing
+              in 1952. Not repealed in England &amp; Wales until 1967.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1871–1945 · Germany</span>Paragraph 175 &amp; the pink triangle</h3>
+            <p class="fear">
+              On the books from 1871 and broadened by the Nazis in 1935,
+              homosexuality was framed as a <strong>contagion sapping the German
+              Volk</strong> — to be “cleansed” from the body politic.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>~100,000 men arrested; 5,000–15,000
+              sent to concentration camps, marked with the pink triangle, with
+              very high death rates. The law survived into West Germany until
+              1994.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1950s · United States</span>The Lavender Scare</h3>
+            <p class="fear">
+              Alongside the Red Scare, gay federal workers were branded
+              <strong>“security risks”</strong> — supposedly perverts open to
+              Soviet blackmail. Eisenhower's Executive Order 10450 (1953) barred
+              them from government work.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Thousands fired or denied jobs; ruined
+              careers, forced outings, and suicides. The State Department
+              apologized in 2017.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1977–1988 · US &amp; UK</span>“Save Our Children” → Section 28</h3>
+            <p class="fear">
+              Anita Bryant's 1977 campaign argued gay people
+              <strong>“must recruit”</strong> children; California's Briggs
+              Initiative (1978) tried to fire gay teachers; Britain's Section 28
+              (1988–2003) banned schools from “promoting” homosexuality.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Civil-rights repeals and copycat
+              campaigns; 15 years of legally silencing support for LGBT students
+              in British schools.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1981–1989 · United States</span>The AIDS “gay plague”</h3>
+            <p class="fear">
+              AIDS was cast as deserved punishment — a <strong>“gay
+              plague”</strong> and divine judgment. Prominent voices floated
+              quarantining and tattooing HIV-positive people.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Years of government inaction
+              accelerated mass death — roughly 70,000 Americans dead by the end
+              of 1989 — while stigma drove people away from testing and care.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">2016–present · United States</span>“Bathroom bills” &amp; the “groomer” panic</h3>
+            <p class="fear">
+              Trans people were recast as bathroom predators (North Carolina's
+              HB2, 2016) and LGBTQ people and drag performers as
+              <strong>“groomers”</strong> indoctrinating children — the same
+              recruitment lie, a new target.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>A record wave of restrictive bills
+              (~510 anti-LGBTQ bills tracked in 2023), armed intimidation at Pride
+              and drag events, and “groomer” normalized as a slur.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="minority-h">
+        <h2 id="minority-h">
+          When the panic is about a person — racial, ethnic &amp; religious minorities
+        </h2>
+        <p class="note">
+          The same four beats — manufactured threat, folk devil, alarm, law and
+          violence — drove some of history's worst atrocities. They are gathered
+          here to make the recurring machinery legible, not to flatten the
+          differences between them.
+        </p>
+        <ol class="timeline">
+          <li>
+            <h3><span class="era">12th c. onward · Europe</span>The blood libel</h3>
+            <p class="fear">
+              Jews were falsely accused of <strong>ritually murdering Christian
+              children</strong> for their blood — the death of any child near
+              Easter could be blamed on the local Jewish community as a hidden,
+              organized crime.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Centuries of pogroms, torture-extracted
+              “confessions,” and expulsions (England expelled its Jews in 1290).
+              Condemned as false by popes from 1247, yet it recurred into the
+              20th century (the Beilis trial, 1911–13).
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">c. 1450–1750 · Europe &amp; New England</span>The witch trials</h3>
+            <p class="fear">
+              Sold as a defensive war against a <strong>satanic conspiracy
+              hidden among neighbors</strong> — a “deviant in our midst,”
+              overwhelmingly women, blamed for plague, crop failure, and
+              misfortune.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Tens of thousands executed across
+              Europe; in Salem (1692) nineteen were hanged and one pressed to
+              death on “spectral evidence.” Now a paradigm of gendered
+              persecution.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1830s–1850s · United States</span>Anti-Catholic nativism</h3>
+            <p class="fear">
+              Irish Catholic immigrants were cast as agents of a
+              <strong>“popish plot”</strong> loyal to the Pope; lurid
+              convent-atrocity hoaxes (Maria Monk, 1836) framed Catholic
+              institutions as threats to women and the Republic.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Mob arson against convents and
+              churches, sustained discrimination, and the nativist Know-Nothing
+              party briefly capturing statehouses.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1870s–1882 · United States</span>“Yellow Peril” &amp; Chinese Exclusion</h3>
+            <p class="fear">
+              “The Chinese Must Go!” — Chinese workers were cast as an
+              unassimilable, <strong>disease-carrying horde</strong> degrading
+              white labor and bloodlines.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>The Chinese Exclusion Act (1882) — the
+              first U.S. law barring a nationality — six decades of exclusion, and
+              mob massacres like Rock Springs (1885, at least 28 killed).
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1880s–1955 · United States</span>The “Black beast rapist” myth</h3>
+            <p class="fear">
+              After emancipation, Black men were cast as innate
+              <strong>predators of white women</strong> — a fabricated threat
+              used to frame lynching as “chivalry” and segregation as protection.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Thousands of spectacle lynchings and
+              the legal architecture of Jim Crow. <em>The Birth of a Nation</em>
+              (1915) revived the Klan; the 1955 murder of Emmett Till and his
+              killers' acquittal helped ignite the civil rights movement.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1903–1945 · Russia → Nazi Germany</span>The Protocols &amp; the Holocaust</h3>
+            <p class="fear">
+              The forged <em>Protocols of the Elders of Zion</em> (1903) packaged
+              Jews as a <strong>hidden world conspiracy</strong> steering
+              governments and economies. Nazi propaganda fused it with
+              pseudo-scientific “racial hygiene” into an existential threat.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>The laws, ghettos, and camps that
+              murdered roughly six million Jews — the word “genocide” was coined
+              (1944) to name it.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1930s · United States</span>Reefer Madness</h3>
+            <p class="fear">
+              Cannabis was sold as a foreign <strong>“killer weed”</strong>
+              driving Mexican laborers and Black musicians to violence and
+              corrupting white youth — Harry Anslinger's explicitly racialized
+              campaign.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Federal prohibition (Marihuana Tax Act,
+              1937) enforced disproportionately on Black and Latino communities
+              for generations.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1942 · United States</span>Japanese American incarceration</h3>
+            <p class="fear">
+              After Pearl Harbor, “Yellow Peril” fear was redirected at Japanese
+              Americans, framed as a <strong>“fifth column”</strong> of spies
+              loyal to the enemy.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Executive Order 9066 imprisoned
+              ~120,000 people without charge on ancestry alone — no espionage was
+              ever proven. Acknowledged as injustice with a 1988 apology and
+              reparations.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">1980s–1990s · United States</span>“Crack babies” &amp; “superpredators”</h3>
+            <p class="fear">
+              Officials and media warned of brain-damaged “crack babies” and
+              coming <strong>“superpredators”</strong> — implicitly Black,
+              remorseless youth criminals — casting Black youth as an irreparable
+              menace.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>The 100-to-1 crack-sentencing
+              disparity and a wave of laws trying children as adults — now
+              recognized as engines of racially skewed mass incarceration.
+            </p>
+          </li>
+          <li>
+            <h3><span class="era">2001–2010s · United States</span>The post-9/11 anti-Muslim panic</h3>
+            <p class="fear">
+              Ordinary Muslims were recast as a hidden <strong>“enemy
+              within”</strong> whose faith and “sharia law” supposedly menaced
+              the nation.
+            </p>
+            <p class="stakes">
+              <span class="tag">Cost</span>Surging hate crimes; the NSEERS
+              program registered ~80,000 men and placed ~13,000 in removal
+              proceedings (none convicted of terrorism); blanket surveillance and
+              anti-sharia laws later struck down as unconstitutional.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="template-h">
+        <h2 id="template-h">The recurring template</h2>
+        <p class="muted">
+          Every panic above — about a thing or a person — runs the same four
+          beats. Recognizing the script is how you tell a real harm from a
+          recycled fear.
+        </p>
+        <div class="grid beats">
+          <div class="card">
+            <h3>Something is singled out</h3>
+            <p>
+              A new medium, or a group of people — usually one already seen as
+              different, foreign, or hard to defend.
+            </p>
+          </div>
+          <div class="card">
+            <h3>“Think of the children”</h3>
+            <p>
+              The threat is framed as corruption of youth, innocence, purity, or
+              “our way of life” — a danger no decent person could ignore.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Authorities sound the alarm</h3>
+            <p>
+              Experts, clergy, press, and hearings lend the fear the weight of
+              certainty — and insist it has never been this bad before.
+            </p>
+          </div>
+          <div class="card">
+            <h3>It hardens — or it fades</h3>
+            <p>
+              Aimed at a thing, the panic usually fades into embarrassment.
+              Aimed at people, it leaves laws, segregation, and graves — and some
+              of these are still running.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sources" aria-labelledby="sources-h">
+        <h2 id="sources-h">Sources &amp; further reading</h2>
+        <p class="muted">
+          Selected authoritative sources behind the entries above, grouped by
+          theme. Books and reports are cited by author and title; institutional
+          archives are linked. Every dated claim was independently fact-checked
+          against standard scholarship and primary records before inclusion;
+          where figures vary by source, the most defensible documented number
+          was used.
+        </p>
+
+        <h3>The concept of “moral panic”</h3>
+        <ul>
+          <li>Stanley Cohen, <em>Folk Devils and Moral Panics</em> (1972).</li>
+          <li>
+            Erich Goode &amp; Nachman Ben-Yehuda, <em>Moral Panics: The Social
+            Construction of Deviance</em> (1994).
+          </li>
+        </ul>
+
+        <h3>Media &amp; youth panics</h3>
+        <ul>
+          <li>
+            Fredric Wertham, <em>Seduction of the Innocent</em> (1954) — the
+            primary text behind the comic-book scare.
+          </li>
+          <li>
+            David Hajdu, <em>The Ten-Cent Plague: The Great Comic-Book Scare and
+            How It Changed America</em> (2008).
+          </li>
+          <li>
+            Joseph P. Laycock, <em>Dangerous Games: What the Moral Panic over
+            Role-Playing Games Says about Play, Religion, and Imagined
+            Worlds</em> (2015).
+          </li>
+        </ul>
+
+        <h3>Panics aimed at LGBTQIA2+ people</h3>
+        <ul>
+          <li>
+            Jessica Kellgren-Fozard, “Why Anti-Trans Arguments Feel So Familiar”
+            (video):
+            <a href="https://youtu.be/mL8knXMmiEg">youtu.be/mL8knXMmiEg</a> — the
+            source of this page's epigraph.
+          </li>
+          <li>David K. Johnson, <em>The Lavender Scare</em> (2004).</li>
+          <li>
+            Randy Shilts, <em>And the Band Played On: Politics, People, and the
+            AIDS Epidemic</em> (1987).
+          </li>
+          <li>
+            United States Holocaust Memorial Museum, Holocaust Encyclopedia —
+            persecution of gay men under Paragraph 175:
+            <a href="https://encyclopedia.ushmm.org">encyclopedia.ushmm.org</a>.
+          </li>
+          <li>
+            Truth and Reconciliation Commission of Canada, <em>Final Report</em>
+            (2015); National Centre for Truth and Reconciliation:
+            <a href="https://nctr.ca">nctr.ca</a> — residential schools and the
+            suppression of Two-Spirit traditions.
+          </li>
+          <li>
+            ACLU, “Mapping Attacks on LGBTQ Rights in U.S. State Legislatures”:
+            <a href="https://www.aclu.org/legislative-attacks-on-lgbtq-rights"
+              >aclu.org/legislative-attacks-on-lgbtq-rights</a
+            >.
+          </li>
+        </ul>
+
+        <h3>Panics aimed at racial, ethnic &amp; religious minorities</h3>
+        <ul>
+          <li>
+            United States Holocaust Memorial Museum, Holocaust Encyclopedia —
+            the Holocaust and the <em>Protocols of the Elders of Zion</em>:
+            <a href="https://encyclopedia.ushmm.org">encyclopedia.ushmm.org</a>.
+          </li>
+          <li>
+            Equal Justice Initiative, <em>Lynching in America: Confronting the
+            Legacy of Racial Terror</em> (3rd ed., 2017):
+            <a href="https://lynchinginamerica.eji.org">lynchinginamerica.eji.org</a>.
+          </li>
+          <li>
+            Commission on Wartime Relocation and Internment of Civilians,
+            <em>Personal Justice Denied</em> (1982–83); Densho archive of the
+            Japanese American incarceration:
+            <a href="https://densho.org">densho.org</a>.
+          </li>
+          <li>
+            Erika Lee, <em>The Making of Asian America: A History</em> (2015) —
+            the Chinese Exclusion Act and the “Yellow Peril.”
+          </li>
+          <li>
+            John Higham, <em>Strangers in the Land: Patterns of American
+            Nativism, 1860–1925</em> (1955) — anti-Catholic and anti-immigrant
+            panics.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="site muted">
+      <p>
+        A concept card on the recurring structure of moral panics. The term
+        comes from sociologist Stanley Cohen (<em>Folk Devils and Moral
+        Panics</em>, 1972). Every historical entry here was researched and
+        adversarially fact-checked for dates, names, and figures before
+        inclusion. See
+        <a href="#sources-h">Sources &amp; further reading</a> above.
+      </p>
+    </footer>
+  </body>
+</html>
